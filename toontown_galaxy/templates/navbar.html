@@ -1,0 +1,33 @@
+{% load static %}
+
+<div>
+    {% url 'public:index' as index_url %}
+    {% url 'public:about' as about_url %}
+    {% url 'public:contact' as contact_url %}
+    {% url 'accounts:profile' as profile_url %}
+
+    <span>{% if request.path == index_url %}
+        <img src = "{% static 'images/TTGicon512.jpg' %}" width='64', height='64' />
+        {% else %}<a href="{{ index_url}}">
+            <img src = "{% static 'images/TTGicon512.jpg' %}" width='64', height='64' />
+        </a>{% endif %}</span>
+    <span>{% if request.path == about_url %}About{% else %}<a href="{{ about_url}}">
+        About
+    </a>
+    {% endif %}</span>
+    <span style = 'float:right'>
+        {% if user.is_authenticated %}
+        <span  > Welcome {{ user.username}}!</span>
+        <span><a href='https://tt-galaxy.com/Qm!ouAjUy$tpiy30*Hc3/installer/Toontown%20Galaxy%20Setup.exe'>Play</a></span>
+        <span>{% if request.path == profile_url %}Account{% else %}<a href="{{ profile_url}}">Account</a>{% endif %}</span>
+        <span > <a href="{% url 'accounts:logout' %}">Logout</a></span>
+        {% else %}
+        <span>
+            <a href="{% url 'accounts:login' %}">Login</a>
+            <a href="{% url 'accounts:register' %}">Register</a>
+        </span>
+        {% endif %}
+    </span>
+    
+
+</div>

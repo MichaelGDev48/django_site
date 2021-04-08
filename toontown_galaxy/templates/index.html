@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<title>{% block title %}Toontown Galaxy{% endblock %}</title>
+{% block content %}
+<head>
+
+    </head>
+<div id="container">
+    <div id="content">
+      <div id="about">
+        <h1>
+          
+
+          <div style='float:center; margin-bottom:20px;'>
+          <img src="{% static 'images/ttg-logo.png' %} " width="690" height="322" />
+          </div>
+          <div class="stage">
+            </div>
+        </h1>
+        <title>Toontown Galaxy</title>
+
+    <h3 style='clear:both' class="subhead">
+          <b>TTG</b> is a private Toontown server with the goal of creating an enjoyable, novel experience for it's players.
+        </h3>
+        <p id='pleft'>
+        </p>
+        <p id='pright'>
+        </p>
+        <ul>
+          <li><a href="https://twitter.com/toontowngalaxy">Twitter</a></li>
+          <li><a href="https://discord.gg/jcWc2vUXqx">Discord</a></li>
+          <li><a href="https://github.com/toontowngalaxy">Github</a></li>
+          <li><a href="https://tt-galaxy.com/apply">Apply Here</a></li>
+        </ul>
+        <p>
+          Feel free to contact us via twitter or dm Galaxy#4350 on discord.
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

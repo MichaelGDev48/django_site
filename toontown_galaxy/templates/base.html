@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <meta charset='utf-8'>
+        <title>{% block title %} Toontown Galaxy{% endblock %}</title>
+        <link rel="shortcut icon" type="image/jpg" href="{% static 'images/TTGicon512.jpg' %}"/>
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
