@@ -26,7 +26,7 @@ SECRET_KEY = "+u^^=$)7^phx(7^*h8#&nehkj4f06!!t5+8dpyvpplz!g2fcvc"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["tt-galaxy.com", "www.tt-galaxy.com", "localhost"]
+ALLOWED_HOSTS = ["tt-galaxy.com", "www.tt-galaxy.com", "localhost", '*']
 PROJECT_DIR = os.path.join(BASE_DIR, "toontown_galaxy")
 
 # Application definition
@@ -116,12 +116,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 
 ]
+STATIC_ROOT = ''
 LOGIN_URL = "accounts:login"
 LOGIN_REDIRECT_URL = "public:index"
 LOGOUT_REDIRECT_URL = "public:index"

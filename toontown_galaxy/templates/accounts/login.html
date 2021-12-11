@@ -2,10 +2,12 @@
 
 {% block title %}Login{% endblock %}
 {% block content %}
-<h2>
+<h2
+style='position:relative; top:100px;'
+>
     Login
 </h2>
-<form float:center method="post">
+<form style='position:relative; top:150px;' float:center method="post">
     {% csrf_token %}
     {{form.as_p}}
     <button type="submit">Login</button>
