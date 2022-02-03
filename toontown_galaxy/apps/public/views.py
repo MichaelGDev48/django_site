@@ -10,4 +10,6 @@ def index(request):
 def about(request):
     return render(request, "about.html")
 
+def partner_apply(request):
+    return render(request, 'partner_apply.html')
 

@@ -7,6 +7,7 @@ urlpatterns = [
 
     path("", views.index, name='index'),
     path("about", views.about, name="about"),
+    path('partner_apply', views.partner_apply, name='partner_apply')
    # path("accounts/profile", views.ProfileView.as_view(), name="profile"),
     
  ]
