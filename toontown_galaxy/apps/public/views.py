@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "landing.html")
 
 
 def about(request):
@@ -12,4 +12,7 @@ def about(request):
 
 def partner_apply(request):
     return render(request, 'partner_apply.html')
+
+def staff(request):
+    return render(request, 'staff.html')
 
