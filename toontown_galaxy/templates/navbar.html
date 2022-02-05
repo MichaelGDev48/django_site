@@ -3,16 +3,24 @@
             <link href="{% static 'css/stylesNav.css' %}" rel="stylesheet" type="text/css" />
 </head>
 
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+
 <header>
-    <a href="{% url 'public:landing' %}">
-        <img class="logo" src="{% static 'images/ttg-logo.png' %}" alt="logo" width="180"/>
-    </a>
     <nav>
         <ul class="nav__links">
             <li><a href="#">News</a></li>
-            <li><a href="#">Staff</a></li>
+            <li><a href="{% url 'public:staff' %}">Staff</a></li>
             <li><a href="#">Notes</a></li>
         </ul>
     </nav>
+    <a href="{% url 'public:landing' %}">
+        <div>
+            <img class="logo" src="{% static 'images/ttg-logo.png' %}" alt="logo" width="180"/>
+        </div>
+        </a>
     <a class="cta" href="#"><button>Contact</button></a>
 </header>
