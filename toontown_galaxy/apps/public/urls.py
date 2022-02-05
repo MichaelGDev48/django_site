@@ -5,7 +5,7 @@ app_name = 'public'
 urlpatterns = [ 
     #path("admin/", admin.site.urls),
 
-    path("", views.index, name='index'),
+    path("", views.index, name='landing'),
     path("about", views.about, name='about'),
     path('partner_apply', views.partner_apply, name='partner_apply'),
     path('staff', views.staff, name='staff')
