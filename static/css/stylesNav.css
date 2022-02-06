@@ -19,7 +19,7 @@ header {
 .logo {
     cursor: pointer;
     position:relative;
-    left: -100px;
+    left: 40px;
     top:-7px;
 }
 
