@@ -1,4 +1,4 @@
- #from django.contrib import admin
+#from django.contrib import admin
 from django.urls import path
 from . import views
 app_name = 'public'
@@ -11,5 +11,4 @@ urlpatterns = [
     path('staff', views.staff, name='staff'),
     path('apply', views.apply, name='apply')
    # path("accounts/profile", views.ProfileView.as_view(), name="profile"),
-    
  ]
