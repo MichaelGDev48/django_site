@@ -16,3 +16,5 @@ def partner_apply(request):
 def staff(request):
     return render(request, 'staff.html')
 
+def apply(request):
+    return render(request, 'apply.html')
