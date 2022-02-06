@@ -18,11 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
     </head>
+
+    <!--Code that might be used for body BG later: background="{% static 'images/bgtest.png' %}" style="background-repeat: no-repeat; background-size: auto;"-->
     <body class="d-flex h-100 flex-column">
          {% include 'navbar.html' %} 
         
         <main>
             {% block content %}
+            
             {% endblock %}
         </main>
             <footer class="footer mt-auto text-center text-white" style="background-color: #5b3480;">

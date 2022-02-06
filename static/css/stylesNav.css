@@ -19,8 +19,8 @@ header {
 .logo {
     cursor: pointer;
     position:relative;
-    left: 40px;
-    top:-7px;
+    left: 65px;
+    top: -7px;
 }
 
 .nav__links {
@@ -50,6 +50,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    
 }
 
 button:hover {
